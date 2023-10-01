@@ -128,5 +128,8 @@ def form_create():
         db.session.add(card)
         db.session.commit()
         return redirect('/index')
+        
     else:
         return render_template('create_card.html')
+if __name__ == "__main__":
+    app.run(debug=True)
